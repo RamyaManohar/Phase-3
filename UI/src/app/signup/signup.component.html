@@ -1,0 +1,37 @@
+<p>Please enter your details</p>
+<div class="container">
+    <table>
+        <tr>
+            <td>ID</td>
+            <td><input type="number" [(ngModel)]="id" required="required"></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" [(ngModel)]="username" required="required"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" [(ngModel)]="password" required="required"></td>
+        </tr>
+        <tr>
+            <td>UserType</td>
+            <td><input type="text" [(ngModel)]="usertype" required="required"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" [(ngModel)]="email" required="required"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number</td>
+            <td><input type="number" [(ngModel)]="mobile" required="required"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+              <button class="btn-primary" (click)='Add()'>Sign up</button>
+            </td>
+        </tr>
+        <div class="middle">
+            <button class="btn btn-primary" [routerLink]="['/Login']" >Login</button>
+            </div>
+    </table>
+</div>

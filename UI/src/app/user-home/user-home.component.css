@@ -1,0 +1,9 @@
+div.middle {
+    border-style: solid;
+    background-color: cornsilk;
+    margin-top: 5em;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 25em;
+    width: 20em
+}

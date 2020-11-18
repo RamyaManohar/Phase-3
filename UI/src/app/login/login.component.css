@@ -1,0 +1,17 @@
+body {background-color: blanchedalmond;}
+ 
+div.form-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em
+}
+div.form-check {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+div.middle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}

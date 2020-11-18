@@ -1,0 +1,179 @@
+
+
+<h3 align="center">Add Company</h3>
+
+<div class="container">
+    
+    <table>
+        <tr>
+            <td>Company ID</td>
+            <td><input type="number" [(ngModel)]="companyId" required="required"></td>
+        </tr>
+        <tr>
+            <td>Company Name</td>
+            <td><input type="text" [(ngModel)]="companyName" required="required"></td>
+        </tr>
+        <tr>
+            <td>TurnOver</td>
+            <td><input type="number" [(ngModel)]="turnover" required="required"></td>
+        </tr>
+        <tr>
+            <td>CEO</td>
+            <td><input type="text" [(ngModel)]="ceo" required="required"></td>
+        </tr>
+        <tr>
+            <td>Board Of Directors</td>
+            <td><input type="text" [(ngModel)]="boardOfDirectors" required="required"></td>
+        </tr>
+        <tr>
+            <td>Listed In Stock Exchange</td>
+            <td><input type="number" [(ngModel)]="listedinStockExchange" required="required"></td>
+        </tr>
+        <tr>
+            <td>Sector</td>
+            <td><input type="text" [(ngModel)]="sector" required="required"></td>
+        </tr>
+        <tr>
+            <td>Brief Writeup</td>
+            <td><input type="text" [(ngModel)]="briefWriteup" required="required"></td>
+        </tr>
+        <tr>
+            <td>Company Stock Code</td>
+            <td><input type="number" [(ngModel)]="companyStockCode" required="required"></td>
+        </tr>
+        <tr>
+            <div align="left" class="middle">
+                 <button type="submit" class="btn btn-primary" (click)="addcompany()">Add Company</button>
+                 <button type="submit" class="btn btn-primary" (click)="updatecompany()">Update Company</button>
+            </div>
+        </tr> 
+    </table>
+    <button class="btn btn-primary" [routerLink]="['/adminhome']" >Back</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+    <body>
+    <form>
+
+      <div align="left" class="form-group">
+          <label>Company ID :</label>        
+          <input type="number" class="form-control" id="exampleInputEmail1" name="id" [(ngModel)]="companyId" placeholder="ID">    
+      </div>
+     <br>       
+      <div align="left" class="form-group">
+          <label>Company Name:</label>    
+          <input type="text" class="form-control" id="exampleInputEmail1"  name="username" [(ngModel)]="companyName" placeholder="Name">
+      </div>
+     <br>
+      <div align="left" class="form-group">
+          <label>TurnOver :</label>
+          <input type="number" class="form-control" id="exampleInputPassword1" name="password"  [(ngModel)]="turnover" placeholder="In rupees">
+      </div>
+     <br>
+      <div align="left" class="form-group">
+          <label>CEO:</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="usertype"  [(ngModel)]="ceo" placeholder="Name">
+      </div>
+     <br>
+      <div align="left" class="form-group">
+          <label>Board Of Directors:</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="mobile"  [(ngModel)]="boardOfDirectors" placeholder="Name">
+      </div>
+     <br>
+      <div align="left" class="form-group">
+          <label>Listed In Stock Exchange:</label>
+          <input type="number" class="form-control" id="exampleInputPassword1" name="value"  [(ngModel)]="listedinStockExchange" placeholder="Number">
+      </div>
+     <br>
+      <div align="left" class="form-group">
+          <label>Sector:</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="email"  [(ngModel)]="sector" placeholder="Sector">
+      </div>
+     <br>
+      <div align="left" class="form-group">
+          <label>Brief Writeup :</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="email"  [(ngModel)]="briefWriteup" placeholder="Email">
+      </div>
+     <br>
+       <div align="left" class="form-group">
+          <label>Company Stock Code :</label>
+          <input type="number" class="form-control" id="exampleInputPassword1" name="email"  [(ngModel)]="companyStockCode" placeholder="Email">
+       </div>
+     <br>
+       <div align="left" class="middle">
+           <button type="submit" class="btn btn-primary" (click)="addcompany()">Add_Company</button>
+       </div>
+   </form>
+
+<br>
+<p style="text-align:center;">Update Company</p>
+
+<form>
+     <div align="left" class="form-group">
+        <label for="exampleInputEmail1">Company ID :</label>        
+        <input type="number" class="form-control" id="exampleInputEmail1" name="id" [(ngModel)]="companyId" placeholder="ID">    
+     </div>
+   <br>       
+     <div align="left" class="form-group">
+        <label for="exampleInputEmail1">Company Name:</label>    
+        <input type="text" class="form-control" id="exampleInputEmail1" name="username" [(ngModel)]="companyName" placeholder="Name">
+     </div>
+    <br>
+     <div align="left" class="form-group">
+        <label for="exampleInputPassword1">TurnOver :</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="password"  [(ngModel)]="turnover" placeholder="In rupees">
+     </div>
+    <br>
+     <div align="left" class="form-group">
+        <label for="exampleInputEmail1">CEO:</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="usertype"  [(ngModel)]="ceo" placeholder="Name">
+     </div>
+    <br>
+     <div align="left" class="form-group">
+        <label for="exampleInputEmail1">Board Of Directors:</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="mobile"  [(ngModel)]="boardOfDirectors" placeholder="Name">
+     </div>
+    <br>
+     <div align="left" class="form-group">
+        <label for="exampleInputEmail1">Listed In Stock Exchange:</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="value"  [(ngModel)]="listedinStockExchange" placeholder="Number">
+     </div>
+    <br>
+     <div align="left" class="form-group">
+       <label for="exampleInputEmail1">Sector:</label>
+       <input type="text" class="form-control" id="exampleInputPassword1" name="email"  [(ngModel)]="sector" placeholder="Sector">
+      </div>
+    <br>
+     <div align="left" class="form-group">
+       <label for="exampleInputEmail1">Brief Writeup :</label>
+       <input type="text" class="form-control" id="exampleInputPassword1" name="email"  [(ngModel)]="briefWriteup" placeholder="Brief">
+     </div>
+    <br>
+     <div align="left" class="form-group">
+        <label for="exampleInputEmail1">Company Stock Code :</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="email"  [(ngModel)]="companyStockCode" placeholder="Number">
+     </div>
+    <br>
+
+    <div class="middle">
+        <button class="btn btn-primary" (click)="updatecompany()" >Update Company</button>
+    </div>
+</form>
+ 
+
+
+
+
+
+
+  -->

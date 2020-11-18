@@ -1,0 +1,54 @@
+<form>
+
+    <input type="number" class="form-control" id="exampleInputPassword1" name="Stockcode"  [(ngModel)]="Stockcode" placeholder="code">
+
+    <input type="date" class="form-control" id="exampleInputPassword1" name="fromdate"  [(ngModel)]="fromdate" placeholder="From date">
+
+    <input type="date" class="form-control" id="exampleInputPassword1" name="todate"  [(ngModel)]="todate" placeholder="To date">
+
+    <input type="text" class="form-control" id="exampleInputPassword1" name="fromtime"  [(ngModel)]="fromtime" placeholder="From time">
+
+    <input type="text" class="form-control" id="exampleInputPassword1" name="totime"  [(ngModel)]="totime" placeholder="To time">
+
+    <select name="type" id="cars"  [(ngModel)]="type">
+
+        <option value="bar">Bar</option>
+
+        <option value="line">Line</option>
+
+        <option value="pie">Pie</option>
+
+        <option value="doughnut">Doughnut</option>
+
+        <option value="radar">Radar</option>
+
+        <option value="bubble">bubble</option>
+
+      </select>
+
+    <button class="btn btn-primary" (click)="display()">Display Chart</button>
+
+</form>
+
+
+<div class="chart-wrapper" *ngIf="displaychart">
+
+    <canvas baseChart 
+
+        [datasets]="lineChartData" 
+
+        [labels]="lineChartLabels" 
+
+        [options]="lineChartOptions"
+
+        [colors]="lineChartColors" 
+
+        [legend]="lineChartLegend" 
+
+        [chartType]="lineChartType" 
+
+        [plugins]="lineChartPlugins">
+
+    </canvas>
+
+</div>
